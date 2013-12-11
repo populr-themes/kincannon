@@ -47,7 +47,7 @@ h2{color: #333; .headline-family; font-size: 20px; font-weight: normal; text-ali
 }
 
 .title-row .asset-title{ color: #333; .headline-family; font-size: 50px; font-weight: normal; text-align: center; text-transform: uppercase;}
-.title-row .body{color: #333333; .headline-family; font-size: 20px; font-weight: normal; text-align: center; padding: 8px 0 0; text-align: center; line-height: 30px;}
+.title-row .body{color: #333333; .headline-family; font-size: 20px; font-weight: normal; text-align: center; padding: 8px 0 0; text-align: center; line-height: 1.5;}
 
 .asset-title a, .description a, .body a {
   color: @accent-color;
@@ -90,17 +90,17 @@ h2{color: #333; .headline-family; font-size: 20px; font-weight: normal; text-ali
 #point-1 img, #point-2 img, #point-3 img{margin: 0 0 30px 0; width: 280px;}
 #point-2{float: left; width: 280px;}
 #point-3{float: right; width: 280px;}
-// .description{color: #6f6d6d; font-family: Helvetica, sans-serif; font-size: 14px; line-height: 22px; text-align: center;}
-// .body-text-left{color: #6f6d6d; font-family: Helvetica; font-size: 14px; line-height: 22px; text-align: left;}
-.body-text{color:#666; font-family: Helvetica, sans-serif; font-size: 14px; line-height: 22px; text-align: center;}
+// .description{color: #6f6d6d; font-family: Helvetica, sans-serif; font-size: 14px; line-height: 1.57; text-align: center;}
+// .body-text-left{color: #6f6d6d; font-family: Helvetica; font-size: 14px; line-height: 1.57; text-align: left;}
+.body-text{color:#666; font-family: Helvetica, sans-serif; font-size: 14px; line-height: 1.57; text-align: center;}
 
 
 /* jm */
 
-.documents li > a .extension {background-color: @doc-bg-top; background-image: url("@{base-url}/images/doc-bg-light.png"); background-repeat: no-repeat; color: @doc-text-top; font-family: Helvetica; font-size: 11px; font-weight: bold; height: 65px; line-height: 98px; text-align: center; text-transform: uppercase; width: 77px; margin: 0 0 10px 0;}
+.documents li > a .extension {background-color: @doc-bg-top; background-image: url("@{base-url}/images/doc-bg-light.png"); background-repeat: no-repeat; color: @doc-text-top; font-family: Helvetica; font-size: 11px; font-weight: bold; height: 65px; line-height: 8.90; text-align: center; text-transform: uppercase; width: 77px; margin: 0 0 10px 0;}
 .documents li{width: 110px; vertical-align: top; margin: 20px 30px 0 30px; min-height: 100px;}
 .documents li > a{
-  display: block; margin: 0 auto; color: #666; font-size: 13px; line-height: 15px;
+  display: block; margin: 0 auto; color: #666; font-size: 13px; line-height: 1.153;
   &:hover {
     color: #888;
   }
@@ -114,7 +114,7 @@ h2{color: #333; .headline-family; font-size: 20px; font-weight: normal; text-ali
 
 .documents li {
   display: inline-block;
-  line-height: 14px;
+  line-height: 1.153;//confused
 }
 
 .documents li > a {
@@ -131,7 +131,7 @@ h1 {
   height: 100px;
   background: #333;
   color: #eee;
-  line-height: 125px;
+  line-height: 125px;//confused
 	display: inline-block;
 }
 
@@ -154,22 +154,22 @@ h1 {
 #pop {font-family: Helvetica, Arial, sans-serif;}
 
 /* text */
-.asset-type-text.asset-size-2, .asset-type-text.asset-size-3 {color: #6A6969; font-family: Helvetica,sans-serif; font-size: 14px; line-height: 22px; text-align: center;}
+.asset-type-text.asset-size-2, .asset-type-text.asset-size-3 {color: #6A6969; font-family: Helvetica,sans-serif; font-size: 14px; line-height: 1.57; text-align: center;}
 .asset-type-text.asset-size-2 .images, .asset-type-text.asset-size-3 .images {float: left; width: 440px;}
 .asset-type-text.asset-size-2 .content, .asset-type-text.asset-size-3 .content {float: right; width: 480px;}
-.asset-type-text.asset-size-2 .asset-title, .asset-type-text.asset-size-3 .asset-title {color: #333; font-size: 18px; font-weight: bold; line-height: 23px; margin: 0 0 15px; text-transform: uppercase;}
+.asset-type-text.asset-size-2 .asset-title, .asset-type-text.asset-size-3 .asset-title {color: #333; font-size: 18px; font-weight: bold; line-height: 1.277; margin: 0 0 15px; text-transform: uppercase;}
 
 
 /* imagegroup */
 .asset-type-imagegroup {text-align: left;}
 .asset-type-imagegroup .images {float: left; width: 440px;}
 .asset-type-imagegroup.asset-size-1 .asset-inner {display: table;}
-.asset-type-imagegroup.asset-size-1 .asset-title {font-size: 40px; line-height: 24px; color: #333; font-weight: bold; text-transform: uppercase; line-height: 38px; margin: 0 0 20px;}
-.asset-type-imagegroup .description {font-size: 14px; line-height: 22px; color: #666; text-align: left;}
+.asset-type-imagegroup.asset-size-1 .asset-title {font-size: 40px; color: #333; font-weight: bold; text-transform: uppercase; line-height:1.4; margin: 0 0 20px;}
+.asset-type-imagegroup .description {font-size: 14px; line-height: 1.57; color: #666; text-align: left;}
 
 .asset-type-imagegroup.asset-size-2 .content, .asset-type-imagegroup.asset-size-3 .content {float: right; width: 480px; /**/display: table;}
 .asset-type-imagegroup.asset-size-2 .asset-title, .asset-type-imagegroup.asset-size-3 .asset-title {font-size: 18px; color: #333; font-weight: bold; text-transform: uppercase; line-height: 23px; margin: 0 0 10px 0;}
-.asset-type-imagegroup.asset-size-2 .description, .asset-type-imagegroup.asset-size-3 .description {font-size: 14px; line-height: 22px; color: #666; text-align: center;}
+.asset-type-imagegroup.asset-size-2 .description, .asset-type-imagegroup.asset-size-3 .description {font-size: 14px; line-height: 1.57; color: #666; text-align: center;}
 
 
 /* videogroup */
@@ -178,18 +178,18 @@ h1 {
 .asset-type-videogroup .playlist li { list-style: none; float: left; margin-left: 10px; }
 .asset-type-videogroup video { display: block; }
 .asset-type-videogroup .mejs-container video { margin-left: 0; }
-.asset-type-videogroup .asset-title {color: #333; font-size: 18px; font-weight: bold; line-height: 23px; margin: 20px 0 10px; text-transform: uppercase;}
+.asset-type-videogroup .asset-title {color: #333; font-size: 18px; font-weight: bold; line-height: 1.277; margin: 20px 0 10px; text-transform: uppercase;}
 .asset-type-videogroup .description {font-size: 14px; line-height: 22px; color: #666; text-align: center;}
 
 
 /* documentgroup */
-.asset-type-documentgroup .asset-title {color: #333; font-size: 18px; font-weight: bold; line-height: 23px; margin: 20px 0 10px; text-transform: uppercase;}
+.asset-type-documentgroup .asset-title {color: #333; font-size: 18px; font-weight: bold; line-height: 1.277; margin: 20px 0 10px; text-transform: uppercase;}
 .asset-type-documentgroup .description {font-size: 14px; line-height: 22px; color: #666; text-align: center;}
 
 
 /* embedgroup */
-.asset-type-embedgroup .asset-title {color: #333; font-size: 18px; font-weight: bold; line-height: 23px; margin: 20px 0 10px; text-transform: uppercase;}
-.asset-type-embedgroup .description {font-size: 14px; line-height: 22px; color: #666; text-align: center;}
+.asset-type-embedgroup .asset-title {color: #333; font-size: 18px; font-weight: bold; line-height: 1.277; margin: 20px 0 10px; text-transform: uppercase;}
+.asset-type-embedgroup .description {font-size: 14px; line-height: 1.5714; color: #666; text-align: center;}
 
 
 .imgdiv{width: 440px; height: 380px; float: left;}
@@ -306,12 +306,12 @@ h1 {
     .imgdiv, .imgdiv-2, .imgdiv-3 { height: auto !important; }
 
     .asset-title, .asset-title a {
-      color: #333;
-      font-size: 18px;
-      font-weight: bold;
-      line-height: 23px;
-      margin: 20px 0 10px;
-      text-transform: uppercase;
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.277;
+        margin: 20px 0 10px;
+        text-transform: uppercase;
       }
 
        .asset-title a { margin: 0 }
