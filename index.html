@@ -61,7 +61,7 @@
 {{#asset "imagegroup" size="1"}}
   <div class="imgdiv"> 
     <div class="mask-1"></div>
-    {{{imageslider images width="440" height="380"}}}
+    {{{imageslider images width="440" height="380" crop-single=true cropping-enabled=false}}}
   </div>
   <div class="hero-right">
     {{{title}}}
@@ -74,7 +74,7 @@
 {{#asset "imagegroup" size="2"}}
   <div class="imgdiv-2"> 
 		<div class="mask-1"></div>
-		{{{imageslider images width="440" height="380"}}}
+		{{{imageslider images width="440" height="380" crop-single=true cropping-enabled=false}}}
 	</div>
   {{{title}}}
   {{{description}}}
@@ -83,7 +83,7 @@
 {{#asset "imagegroup" size="3"}}
   <div class="imgdiv-3"> 
     <div class="mask-3"></div>
-    {{{imageslider images width="278" height="240"}}}
+    {{{imageslider images width="278" height="240" crop-single=true cropping-enabled=false}}}
   </div>
   {{{title}}}
   {{{description}}}
@@ -196,7 +196,7 @@
 {{#asset "imagegroup" size="3"}}
   <div class="imgdiv-3"> 
 		<div class="mask-3"></div>
-		{{{imageslider images width="278" height="240"}}}
+		{{{imageslider images width="278" height="240" crop-single=true cropping-enabled=false}}}
 	</div>
   {{{title}}}
   {{{description}}}
@@ -205,24 +205,17 @@
 {{#asset "imagegroup" size="2"}}
   <div class="imgdiv-2"> 
 		<div class="mask-1"></div>
-		{{{imageslider images width="440" height="380"}}}
+		{{{imageslider images width="440" height="380" crop-single=true cropping-enabled=false}}}
 	</div>
   {{{title}}}
   {{{description}}}
 {{/asset}}
 
 {{#asset "imagegroup" size="1"}}
-  {{#if_many images}}
-    <div class="imgdiv"> 
-  		<div class="mask-1"></div>
-  		{{{imageslider images width="440" height="380"}}}
-  	</div>
-  {{else}}
-    	<div class="imgdiv"> 
-    		<div class="mask-1"></div>
-    		<img src="{{{resize original_url width=440 height=380}}}" title="{{{title}}}"/>
-    	</div>
-  {{/if_many}}
+  <div class="imgdiv"> 
+		<div class="mask-1"></div>
+		{{{imageslider images width="440" height="380" crop-single=true cropping-enabled=false}}}
+	</div>
   <div class="hero-right">
     {{{title}}}
     <div class="body-text-left">
