@@ -59,19 +59,10 @@
 
 
 {{#asset "imagegroup" size="1"}}
-  {{#if_many images}}
-    <div class="imgdiv"> 
-      <div class="mask-1"></div>
-      {{{imageslider images width="440" height="380"}}}
-    </div>
-  {{else}}
-    {{#images}}
-      <div class="imgdiv"> 
-        <div class="mask-1"></div>
-        <img src="{{{resize original_url width=440 height=380}}}" title="{{{title}}}"/>
-      </div>
-    {{/images}}
-  {{/if_many}}
+  <div class="imgdiv"> 
+    <div class="mask-1"></div>
+    {{{imageslider images width="440" height="380"}}}
+  </div>
   <div class="hero-right">
     {{{title}}}
     <div class="body-text-left">
@@ -81,37 +72,19 @@
 {{/asset}}
 
 {{#asset "imagegroup" size="2"}}
-   {{#if_many images}}
-    <div class="imgdiv-2"> 
-  		<div class="mask-1"></div>
-  		{{{imageslider images width="440" height="380"}}}
-  	</div>
-  {{else}}
-    {{#images}}
-    	<div class="imgdiv-2"> 
-    		<div class="mask-1"></div>
-    		<img src="{{{resize original_url width=440 height=380}}}" title="{{{title}}}"/>
-    	</div>
-    {{/images}}
-  {{/if_many}}
+  <div class="imgdiv-2"> 
+		<div class="mask-1"></div>
+		{{{imageslider images width="440" height="380"}}}
+	</div>
   {{{title}}}
   {{{description}}}
 {{/asset}}
 
 {{#asset "imagegroup" size="3"}}
-   {{#if_many images}}
-    <div class="imgdiv-3"> 
-      <div class="mask-3"></div>
-      {{{imageslider images width="278" height="240"}}}
-    </div>
-  {{else}} 
-    {{#images}}
-      <div class="imgdiv-3"> 
-      <div class="mask-3"></div>
-        <img src="{{{resize original_url width=278 height=240}}}" title="{{{title}}}"/>
-      </div>
-    {{/images}}
-  {{/if_many}}
+  <div class="imgdiv-3"> 
+    <div class="mask-3"></div>
+    {{{imageslider images width="278" height="240"}}}
+  </div>
   {{{title}}}
   {{{description}}}
 {{/asset}}
@@ -221,37 +194,19 @@
 
 
 {{#asset "imagegroup" size="3"}}
-   {{#if_many images}}
-    <div class="imgdiv-3"> 
-  		<div class="mask-3"></div>
-  		{{{imageslider images width="278" height="240"}}}
-  	</div>
-  {{else}} 
-    {{#images}}
-    	<div class="imgdiv-3"> 
-    	<div class="mask-3"></div>
-    		<img src="{{{resize original_url width=278 height=240}}}" title="{{{title}}}"/>
-    	</div>
-    {{/images}}
-  {{/if_many}}
+  <div class="imgdiv-3"> 
+		<div class="mask-3"></div>
+		{{{imageslider images width="278" height="240"}}}
+	</div>
   {{{title}}}
   {{{description}}}
 {{/asset}}
   	  	
 {{#asset "imagegroup" size="2"}}
-   {{#if_many images}}
-    <div class="imgdiv-2"> 
-  		<div class="mask-1"></div>
-  		{{{imageslider images width="440" height="380"}}}
-  	</div>
-  {{else}}
-    {{#images}}
-    	<div class="imgdiv-2"> 
-    		<div class="mask-1"></div>
-    		<img src="{{{resize original_url width=440 height=380}}}" title="{{{title}}}"/>
-    	</div>
-    {{/images}}
-  {{/if_many}}
+  <div class="imgdiv-2"> 
+		<div class="mask-1"></div>
+		{{{imageslider images width="440" height="380"}}}
+	</div>
   {{{title}}}
   {{{description}}}
 {{/asset}}
@@ -263,12 +218,10 @@
   		{{{imageslider images width="440" height="380"}}}
   	</div>
   {{else}}
-    {{#images}}
     	<div class="imgdiv"> 
     		<div class="mask-1"></div>
     		<img src="{{{resize original_url width=440 height=380}}}" title="{{{title}}}"/>
     	</div>
-    {{/images}}
   {{/if_many}}
   <div class="hero-right">
     {{{title}}}
